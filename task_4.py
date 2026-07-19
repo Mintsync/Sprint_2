@@ -24,5 +24,4 @@ class EmployeeSalary:
         cls.hourly_payment = hourly_payment
 
     def salary(self):
-        emp = EmployeeSalary.get_hours(self.name, self.rest_days, self.hours, self.email)
-        return emp.hours * EmployeeSalary.hourly_payment
+        return self.hours * self.hourly_payment
